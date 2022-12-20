@@ -10,16 +10,8 @@ if (a < 100)
 {
     Console.WriteLine("третьей цифры нет");
 }
-else if (a < 1000)
+else
 {
-    Console.WriteLine(a % 10);
+    string str = a.ToString();
+    Console.WriteLine(str[2]);
 }
-else if (a < 10000)
-{
-    Console.WriteLine((a % 100) / 10);
-}
-else if (a < 100000)
-{
-    Console.WriteLine((a % 1000) / 100);
-}
-
